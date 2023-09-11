@@ -1,0 +1,82 @@
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.icon-box div {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.icon-box div i {
+  font-size: 15px;
+}
+
+#search i {
+  color: gray;
+  font-size: 15px;
+}
+
+#redline {
+  background-color: red;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+#redline .col-1 {
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 14px;
+  overflow: hidden;
+  border-right: 1px solid white;
+  margin: 8px 0;
+}
+#redline #right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+}
+#redline #right-side span {
+  background-color: yellow;
+  color: black;
+  font-size: 8px;
+  font-weight: 800;
+  padding: 2px;
+  border-radius: 2px;
+}
+#redline #right-side div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+#redline #right-side div p {
+  margin-top: 2px;
+  font-size: 8px;
+  color: white;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.glide__slide {
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+}
+
+.glide__slides img {
+  height: 500px !important;
+  width: 100;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}/*# sourceMappingURL=customstyle.css.map */

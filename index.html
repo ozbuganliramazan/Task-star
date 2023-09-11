@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customstyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="col black-line">as</div>
+      <div
+        class="row p-3 d-flex flex-nowrap align-items-center header-middle"
+      >
+        <div class="col">
+          <p>İSTANBUL 15C</p>
+          <p>PARÇALI BULUTLU</p>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <div class="mode-change-btn">
+            <div class="fa-solid fa-moon"></div>
+            <div>Gece Modu</div>
+          </div>
+          <p>İstanbul 00:52:50</p>
+          <p>İkindi Kalan Süre</p>
+        </div>
+      </div>
+      <div
+        class="row d-flex flex-nowrap p-1 justify-content-between"
+        id="navbar"
+      >
+        <a href="" class="col">SONDAKİKA</a>
+        <a href="" class="col">GÜNCEL</a>
+        <a href="" class="col">DÜNYA</a>
+        <a href="" class="col">EKONOMİ</a>
+        <a href="" class="col">SPOR</a>
+        <a href="" class="col">YAŞAM</a>
+        <a href="" class="col">BİLİMTEKNOLOJİ</a>
+        <a href="" class="col">AÇIKGÖRÜŞ</a>
+        <a href="" class="col">YAZARLAR</a>
+      </div>
+      <div class="row black-line d-flex flex-nowrap px-2 gap-8">
+        <div class="col d-flex flex-nowrap gap-3 pt-2" id="leftside">
+          <div class="d-flex flex-nowrap gap-1">
+            <p>DOLAR</p>
+            <span> 7,4873</span>
+          </div>
+          <div class="d-flex flex-nowrap gap-1">
+            <p class="d-flex flex-nowrap">EURO</p>
+            <span>8,9473</span>
+          </div>
+          <div class="d-flex flex-nowrap gap-1">
+            <p class="d-flex flex-nowrap">ALTIN</p>
+            <span>408,717</span>
+          </div>
+          <div class="d-flex flex-nowrap gap-1">
+            <p class="d-flex flex-nowrap">BIST100</p>
+            <span>1542,2</span>
+          </div>
+        </div>
+        <div
+          class="col d-flex flex-nowrap gap-2 pt-2 justify-content-between"
+          id="leftside"
+        >
+          <div class="d-flex flex-nowrap gap-1">
+            <p
+              class="fa-solid fa-images d-flex align-items-center gap-1"
+            ></p>
+            <span> FOTOGALERİ</span>
+          </div>
+          <div class="d-flex flex-nowrap gap-1">
+            <p
+              class="fa-solid fa-play d-flex align-items-center gap-1"
+            ></p>
+            <span> VİDEOGALERİ</span>
+          </div>
+          <div class="d-flex flex-nowrap gap-1">
+            <p
+              class="fa-brands fa-slideshare d-flex align-items-center gap-1"
+            ></p>
+            <span> CANLIYAYIN</span>
+          </div>
+
+          <div class="icon-box">
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="redline">
+        <div class="col-1">SON DAKİKA</div>
+        <div class="col-11" id="right-side">
+          <div class="col">
+            <span>18:00</span>
+            <p>
+              Sosyal medayada şehitlerimize hakaret etmişti...
+              Yakalandı
+            </p>
+          </div>
+          <div class="col">
+            <span>18:00</span>
+            <p>
+              Sosyal medayada şehitlerimize hakaret etmişti...
+              Yakalandı
+            </p>
+          </div>
+          <div class="col">
+            <span>18:00</span>
+            <p>
+              Sosyal medayada şehitlerimize hakaret etmişti...
+              Yakalandı
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="glide hero">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <img class="glide__slide" src="images/haber4.jpg"/>
+        <img class="glide__slide" src="images/haber5.jpg"/>
+        <img class="glide__slide" src="images/haber6.webp"/>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
